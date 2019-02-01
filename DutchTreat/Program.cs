@@ -31,7 +31,7 @@ namespace DutchTreat
       {
         //var seeder = host.Services.GetService<DutchSeeder>();
         var seeder = scope.ServiceProvider.GetService<DutchSeeder>();
-        seeder.Seed();
+        seeder.SeedAsync().Wait();
       }
     }
 

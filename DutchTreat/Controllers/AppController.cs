@@ -5,54 +5,56 @@ using System.Threading.Tasks;
 using DutchTreat.Data;
 using DutchTreat.Services;
 using DutchTreat.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DutchTreat.Controllers
 {
-  public class AppController : Controller
-  {
-    private readonly IMailService _mailService;
-    private readonly IDutchRepository _repository;
-
-    public AppController(IMailService mailService, IDutchRepository repository)
+    public class AppController : Controller
     {
-      this._mailService = mailService;
-      _repository = repository;
-    }
+        private readonly IMailService _mailService;
+        private readonly IDutchRepository _repository;
 
-    public IActionResult Index()
-    {
-      return View();
-    }
+        public AppController(IMailService mailService, IDutchRepository repository)
+        {
+            this._mailService = mailService;
+            _repository = repository;
+        }
 
-    [HttpGet("contact")]
-    public IActionResult Contact()
-    {
-      return View();
-    }
+        public IActionResult Index()
+        {
+            return View();
+        }
 
-    [HttpPost("contact")]
-    public IActionResult Contact(ContactViewModel model)
-    {
-      if (ModelState.IsValid)
-      {
-        // Send the email
-        _mailService.SendMessage("kenneth.laforteza@pointwest.com.ph", model.Subject, model.Message);
-        ViewBag.UserMessage = "Mail sent!";
-      }
+        [HttpGet("contact")]
+        public IActionResult Contact()
+        {
+            return View();
+        }
 
-      return View();
-    }
+        [HttpPost("contact")]
+        public IActionResult Contact(ContactViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                // Send the email
+                _mailService.SendMessage("kenneth.laforteza@pointwest.com.ph", model.Subject, model.Message);
+                ViewBag.UserMessage = "Mail sent!";
+            }
 
-    public IActionResult About()
-    {
-      return View();
-    }
+            return View();
+        }
 
-    public IActionResult Shop()
-    {
-      var results = _repository.GetAllProducts();
-      return View(results);
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Shop()
+        {
+            var results = _repository.GetAllProducts();
+            return View(results);
+        }
     }
-  }
 }

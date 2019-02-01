@@ -3,12 +3,17 @@
     "Favorite": "blue"
   },
   "ConnectionStrings": {
-    "DutchConnectionString": "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\kenneth.laforteza\\Documents\\DutchTreatDb.mdf;Integrated Security=True;MultipleActiveResultSets=True;Connect Timeout=30"
+    "DutchConnectionString": "Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=DutchTreatDb;AttachDbFilename=C:\\Users\\kenneth.laforteza\\Documents\\DutchTreatDb.mdf;Integrated Security=True;MultipleActiveResultSets=True;Connect Timeout=30"
   },
   "Logging": {
     "LogLevel": {
       "Default": "Information",
       "Microsoft": "Warning"
     }
+  },
+  "Tokens": {
+    "Key": "kkafjlaksdfjklkkafjlaksdfjkl",
+    "Issuer": "localhost",
+    "Audience": "users"
   }
 }
