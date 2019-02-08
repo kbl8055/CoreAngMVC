@@ -15,6 +15,7 @@ C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcorea
 C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.RazorCoreGenerate.cache
 C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
 C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewStart.g.cshtml.cs
+C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
 C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\App\About.g.cshtml.cs
 C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\App\Contact.g.cshtml.cs
 C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\App\Index.g.cshtml.cs
@@ -29,4 +30,3 @@ C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcorea
 C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.pdb
 C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.csproj.CopyComplete
 C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.csprojAssemblyReference.cache
-C:\Users\kenneth.laforteza\source\repos\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
